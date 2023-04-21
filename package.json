@@ -1,5 +1,5 @@
 {
-  "name": "uniswap.v2-sushiswap-arbitrage",
+  "name": "unisushi-arbitrage",
   "version": "1.0.0",
   "description": "",
   "main": "",
@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "6eer",
+  "author": "blasbot",
   "license": "ISC",
   "dependencies": {
     "@openzeppelin/contracts": "^4.0.0",

@@ -3,14 +3,14 @@
 # Making arbitrage between Uniswap V2 and Sushiswap
 
 ## Index
-+ [What its included in this repo?](https://github.com/6eer/uniswap-sushiswap-arbitrage-bot#what-its-included-in-this-repo)
-+ [Installation](https://github.com/6eer/uniswap-sushiswap-arbitrage-bot#installation)
-+ [Running the demo](https://github.com/6eer/uniswap-sushiswap-arbitrage-bot#running-the-demo)
-+ [Running on a ethereum network](https://github.com/6eer/uniswap-sushiswap-arbitrage-bot#running-on-a-ethereum-network)
-+ [Notes](https://github.com/6eer/uniswap-sushiswap-arbitrage-bot#notes)
-+ [Considerations for production](https://github.com/6eer/uniswap-sushiswap-arbitrage-bot#considerations-for-production)
-+ [Useful resources](https://github.com/6eer/uniswap-sushiswap-arbitrage-bot#useful-resources)
-+ [License](https://github.com/6eer/uniswap-sushiswap-arbitrage-bot#license)
++ [What its included in this repo?](https://github.com/blasbot/unisushi-arbitrage-bot#what-its-included-in-this-repo)
++ [Installation](https://github.com/blasbot/unisushi-arbitrage-bot#installation)
++ [Running the demo](https://github.com/blasbot/unisushi-arbitrage-bot#running-the-demo)
++ [Running on a ethereum network](https://github.com/blasbot/unisushi-arbitrage-bot#running-on-a-ethereum-network)
++ [Notes](https://github.com/blasbot/unisushi-arbitrage-bot#notes)
++ [Considerations for production](https://github.com/blasbot/unisushi-arbitrage-bot#considerations-for-production)
++ [Useful resources](https://github.com/blasbot/unisushi-arbitrage-bot#useful-resources)
++ [License](https://github.com/blasbot/unisushi-arbitrage-bot#license)
 
 ## What its included in this repo?
 
@@ -44,8 +44,8 @@ nvm install 12.22.1
 4) Clone the repo and install its dependencies.
 ```bash
 cd
-git clone https://github.com/6eer/uniswap-sushiswap-arbitrage-bot.git
-cd uniswap-sushiswap-arbitrage-bot
+git clone https://github.com/blasbot/unisushi-arbitrage-bot.git
+cd unisushi-arbitrage-bot
 npm install
 npm install -g ganache-cli
 git clone https://github.com/sushiswap/sushiswap.git
@@ -93,13 +93,13 @@ Once the arbitrage occur (you will notice because the logs on the console) Ctrol
 
 ## Notes
 
-+ **10/07/21 ->** If u are having gas issues, check out [this tiny thread](https://github.com/6eer/uniswap-sushiswap-arbitrage-bot/issues/2)
++ **10/07/21 ->** If u are having gas issues, check out [this tiny thread](https://github.com/blasbot/unisushi-arbitrage-bot/issues/2)
 
 + **14/06/21 ->** I realize that the arbitrage, in the manner that I did it, its not rigth conceptually. The proper way, I think, it would have been using a CEX (Centralized EXchange) like Binance or Coinbase as off-chain oracle and use Avee (lending platform) [flashloans](https://aave.com/flash-loans/) (similar to how flashswaps works) to arbitrage whatever DEX (Decentralized EXchanges) I wished. The only 'drawback' that I can see with this approach is that you must pay back the flashloan in the same asset you borrow so you probably need and extra trade. Personally I only understand how Uniswap like exchanges works, in other words, AMMs that uses the constant product formula to set the price [(here more info)](https://defiweekly.substack.com/p/the-state-of-amms-3ad). What Im trying to say its that I dont know if other kind of AMMs are arbitrageable (I remember hear about a DEX that auto regulates its prices), so keep that in mind. But, that said, I think it is a good project to get confidence with the ethereum blackchain, understand how it works, the software stack and learn how one of the most important protocols that the network has, Uniswap, works. Good luck!
 
 ## Considerations for production
 
-+ Read [this issue](https://github.com/6eer/uniswap-sushiswap-arbitrage-bot/issues/5) (useful).
++ Read [this issue](https://github.com/blasbot/unisushi-arbitrage-bot/issues/5) (useful).
 
 + Its **_very important_** that you set up an aproppiate value to amountOutMin on
 ```javascript
