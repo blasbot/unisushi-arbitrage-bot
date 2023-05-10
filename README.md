@@ -9,7 +9,6 @@
 + [Notes](https://github.com/blasbot/unisushi-arbitrage-bot#notes)
 + [Considerations for production](https://github.com/blasbot/unisushi-arbitrage-bot#considerations-for-production)
 + [Useful resources](https://github.com/blasbot/unisushi-arbitrage-bot#useful-resources)
-+ [License](https://github.com/blasbot/unisushi-arbitrage-bot#license)
 
 ## What its included in this repo?
 
@@ -141,7 +140,3 @@ for safety reasons, if not you could be losing money. see Uniswap docs for more 
 [Truffle docs](https://www.trufflesuite.com/docs/truffle/overview)
 
 [Solidity docs](https://docs.soliditylang.org/en/v0.8.5/)
-
-## License
-
-[MIT](https://tldrlegal.com/license/mit-license)
